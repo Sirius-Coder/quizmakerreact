@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.box {
+    position: relative;
+    height: 95vh;
+    padding: 0px;
+    border: 15px solid black;
+    border-bottom: 20px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+}
+
+.box h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 200px;
+    letter-spacing: 5px;
+}
+
+@keyframes myh1box {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        transform: translateX(0);
+    }
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    transition: all 0.4s ease;
+    padding: 10px;
+    animation-name: linkbox;
+    animation-duration: 2s;
+}
+
+@keyframes linkbox {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.a:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    width: 50%;
+}

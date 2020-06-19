@@ -1,0 +1,30 @@
+{
+    "name": "quizfinal",
+    "version": "1.0.0",
+    "description": "A MERN Stack Application",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Saumitra Kumar",
+    "license": "ISC",
+    "dependencies": {
+        "animate.css": "^4.1.0",
+        "axios": "^0.19.2",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.9.19",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.4",
+        "path": "^0.12.7"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    },
+    "engines": {
+        "node": "12.4.0"
+    }
+}

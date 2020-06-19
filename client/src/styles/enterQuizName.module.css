@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parentDiv {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.container {
+    position: relative;
+    border: 10px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 70vw;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.container h1 {
+    font-size: 70px;
+    letter-spacing: normal;
+    text-indent: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container input {
+    justify-content: center;
+    width: 70%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    height: 5vh;
+    border-radius: 30px;
+    outline: none;
+    font-size: 30px;
+    font-family: 'Roboto', cursive;
+    font-weight: 300;
+    background-color: white;
+    transition: all 0.3s ease;
+    aniamtion-name: inputanim;
+    animation-duration: 2s;
+}
+
+@keyframes inputanim {
+    0% {
+        transform: skewX(-15deg);
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: skewX(0);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.container input:focus {
+    width: 100%;
+    border: 5px solid yellow;
+}
+
+.container .btn {
+    margin-top: 50px;
+    background-color: #001C55;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    transition: all 0.2s ease;
+    outline: none;
+    background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%);
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-position: right center;
+}
